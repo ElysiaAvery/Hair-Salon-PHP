@@ -41,6 +41,7 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
 * `CREATE DATABASE hair_salon;`
 * `USE hair_salon;`
 * `CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR (255));`
+* `CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR (255), stylist_id int);`
 
 
 ## Known Bugs
