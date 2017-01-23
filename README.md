@@ -31,11 +31,17 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
   * `$ php -S localhost:8080`
 * In a separate terminal window (from the top of the project directory), enter: `$ mysql.server start`
   * `$ mysql -uroot -proot`
+  * `$ apachectl start`
   * Navigate to http://localhost:8080/phpmyadmin and login using root as the username and password.
   * Then click the Import tab at the top.
 * Navigate to localhost:8000 in the browser of your choice. (This app was tested in Chrome).
 
 ## MySQL Commands
+
+* `CREATE DATABASE hair_salon;`
+* `USE hair_salon;`
+* `CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR (255));`
+
 
 ## Known Bugs
 
