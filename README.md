@@ -24,8 +24,8 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
 ## Setup/Installation Requirements
 
 * In your terminal window:
-  * `$ git clone https://github.com/ElysiaAvery/Hair-Salon` to your Desktop.
-* navigate to the project directory: `$ cd Hair-Salon`
+  * `$ git clone https://github.com/ElysiaAvery/Hair-Salon-PHP` to your Desktop.
+* navigate to the project directory: `$ cd Hair-Salon-PHP`
 * In a new terminal window enter: `$ composer install`
 * In a separate terminal window, navigate to the web folder: `$ cd web`
   * `$ php -S localhost:8080`
