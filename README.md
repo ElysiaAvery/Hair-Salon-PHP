@@ -10,12 +10,12 @@ Input Behavior | Input | Output
 Can set a stylist's name and ID | Stylist (name, id); | "Siouxsie Sioux", 1
 Can save a stylist to the DB | "Siouxsie Sioux", 1 | n/a
 Can retrieve all stylists  | Stylist::getAll() | "Siouxsie Sioux", "Cyndi Lauper"
-Can find a stylist based on ID | "Siouxsie Sioux", 1 | localhost:8080/stylists/1, "Siouxsie Sioux"
+Can find a stylist based on ID | "Siouxsie Sioux", 1 | localhost:8000/stylists/1, "Siouxsie Sioux"
 Can set a client's name, ID, and stylist ID | Client (name, id, stylist id); | "Rose McDowell", 1, 1
 Can save a client to the DB | "Rose McDowell", 1, 1 | n/a
 Can retrieve all clients  | Client::getAll() | "Rose McDowell", "Selena Quintanilla"
 All of a stylist's clients can be retrieved | getClients(); | "Rose McDowell", "Selena Quintanilla"
-Can find a client based on ID | "Selena Quintanilla", 2 | localhost:8080/clients/2, "Siouxsie Sioux"
+Can find a client based on ID | "Selena Quintanilla", 2 | localhost:8000/clients/2, "Siouxsie Sioux"
 A stylist's name can be updated | old name: "Siouxsie Sioux", new name: "Siouxsie S." | "Siouxsie S."
 A client's name can be updated | old name: "Selena Quintanilla", new name: "Selena Quintanilla-Perez" | "Selena Quintanilla-Perez"
 A stylist can be deleted from the DB | "Siouxsie S." delete() | n/a
