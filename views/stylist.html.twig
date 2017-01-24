@@ -19,7 +19,7 @@
     <form action='/clients' method='post'>
         <input id="stylist_id" name="stylist_id" type="hidden" value="{{ stylist.getId() }}">
         <label for='name'>Client's Name:</label>
-        <input id='name' name='name' type='text'>
+        <input id='name' name='name' type='text' required>
 
         <button type='submit'>Add Client</button>
     </form>
