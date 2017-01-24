@@ -28,11 +28,11 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
 * navigate to the project directory: `$ cd Hair-Salon-PHP`
 * In a new terminal window enter: `$ composer install`
 * In a separate terminal window, navigate to the web folder: `$ cd web`
-  * `$ php -S localhost:8080`
+  * `$ php -S localhost:8000`
 * In a separate terminal window (from the top of the project directory), enter: `$ mysql.server start`
   * `$ mysql -uroot -proot`
   * `$ apachectl start`
-  * Navigate to http://localhost:8080/phpmyadmin and login using root as the username and password.
+  * Navigate to http://localhost:8888/phpmyadmin in a browser and login using root as the username and password.
   * Then click the Import tab at the top.
 * Navigate to localhost:8000 in the browser of your choice. (This app was tested in Chrome).
 
