@@ -31,9 +31,9 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
   * `$ php -S localhost:8000`
 * In a separate terminal window (from the top of the project directory), enter: `$ mysql.server start`
   * `$ mysql -uroot -proot` or `$ /Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot`
-  * `$ apachectl start`
+* In a separate terminal window (from the top of the project directory), enter: `$ apachectl start`
   * Navigate to http://localhost:8888/phpmyadmin in a browser and login using root as the username and password.
-  * Then click the Import tab at the top.
+  * Then click the Import tab at the top and choose `hair_salon.sql` from the Hair-Salon-PHP folder.
 * Navigate to localhost:8000 in the browser of your choice. (This app was tested in Chrome).
 
 ## MySQL Commands
