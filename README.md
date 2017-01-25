@@ -38,10 +38,10 @@ When a stylist is deleted their clients are also deleted from the DB | stylist: 
 
 ## MySQL Commands
 
-* `CREATE DATABASE hair_salon;`
-* `USE hair_salon;`
-* `CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR (255));`
-* `CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR (255), stylist_id int);`
+* `mysql> CREATE DATABASE hair_salon;`
+* `mysql> USE hair_salon;`
+* `mysql> CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR (255));`
+* `mysql> CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR (255), stylist_id int);`
 
 
 ## Known Bugs
