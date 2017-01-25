@@ -30,12 +30,11 @@
         if(trim($val) == '' || empty($val)) {
           $error = 'You have entered an invalid name.';
           return $app['twig']->render('error.html.twig', array('error' => $error));
-        } else {
-          $stylist = new Stylist($_POST['name']);
-          $stylist->save();
-          return $app['twig']->render('index.html.twig', array('stylists' => Stylist::getAll()));
-        }
+        } else {}
       }
+      $stylist = new Stylist($_POST['name']);
+      $stylist->save();
+      return $app['twig']->render('index.html.twig', array('stylists' => Stylist::getAll()));
     } else {}
   });
 
