@@ -7,6 +7,11 @@ h1, h3, h4, p, label, li, a, .btn{
   list-style: none;
 }
 
+h2 {
+  color: maroon;
+  text-align: center;
+}
+
 #transparent {
   display: block;
   margin-left: auto;
