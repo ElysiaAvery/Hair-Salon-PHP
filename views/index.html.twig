@@ -1,31 +1,41 @@
 <html>
 <head>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+  <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
   <title>Sweet Tamarind Hair Salon</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Sweet Tamarind!</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="hair.jpg" class="img-responsive" id="backg">
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" id="transparent">
+        <h1>Welcome to Sweet Tamarind!</h1>
 
-    <h3>Add a newly hired Stylist:</h3>
+        <h3>Add a newly hired Stylist:</h3>
 
-    <form action="/stylists" method="post">
-      <label for="name">Stylist's Name:</label>
-      <input id="name" name="name" type="text" required>
+        <form action="/stylists" method="post">
+          <label for="name">Stylist's Name:</label>
+          <input id="name" name="name" type="text" required>
 
-      <button type="submit">Add Stylist</button>
-    </form>
+          <button type="submit" class="btn btn-success">Add Stylist</button>
+        </form>
 
-    {% if stylists is not empty %}
-      <h3>Current Stylists:</h3>
-      <ul>
-        {% for stylist in stylists %}
-          <li><a href="/stylists/{{ stylist.getId }}">{{ stylist.getName }}</a></li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <h3>Hire Some Stylists!</h3>
-    {% endif %}
+        {% if stylists is not empty %}
+          <h3>Current Stylists:</h3>
+          <ul>
+            {% for stylist in stylists %}
+              <li><a href="/stylists/{{ stylist.getId }}">{{ stylist.getName }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <h3>Hire Some Stylists!</h3>
+        {% endif %}
+      </div>
+    </div>
   </div>
 </body>
 </html>
